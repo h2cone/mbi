@@ -21,7 +21,7 @@ public class ExamplePluginTest {
 
         try (SqlSession session = sqlSessionFactory.openSession()) {
             CityMapper mapper = session.getMapper(CityMapper.class);
-            List<City> cities = mapper.selectCities("440000");
+            List<City> cities = mapper.selectCities("000000");
             Assert.assertNotNull(cities);
         }
     }
